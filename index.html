@@ -9,6 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/style.css">
   <link rel="stylesheet" href="style.css">
   <title>OriginSix</title>
 </head>
@@ -17,23 +18,41 @@
   <header id="header">
     <nav class="container">
       <a class="logo" href="#">beauty<span>salon</span>.</a>
-      <div>...</div>
+      <div class="menu">
+        <!-- atalho emmet-> ul>li*5a -->
+        <ul class="grid">
+          <li><a class="title" href="#home">Início</a></li>
+          <li><a class="title" href="#about">Sobre</a></li>
+          <li><a class="title" href="#services">Serviços</a></li>
+          <li><a class="title" href="#testimanials">Depoimentos</a></li>
+          <li><a class="title" href="#contact">Contato</a></li>
+        </ul>
+      </div>
+      <div class="icon-menu toggle"></div>
+        <div class="icon-close toggle"></div>
     </nav>
   </header>
   <main>
     <section class="section" id="home">
       <div class="container grid">
         <div class="image">
-        <img src="image/Img.svg" alt="cabelelheira escovando cabelo da cliente">
+        <img src="assets/image/Img.svg" alt="cabelelheira escovando cabelo da cliente">
         </div>
         <div class="text">
-          <h1>Saúde natural para os seus cabelos</h1>
+          <h2 class="title">Saúde natural para os seus cabelos</h2>
           <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
-          <a class="button" href="#">Agendar um horário</a>
+          <a class="button button" href="#">Agendar um horário</a>
         </div>
       </div>
     </section>
     <div class="divider-1"></div>
+    <!--atalho emmet -> section.section#about>.container.grid -->
+    <section id="about" class="section">
+      <div class="container grid"></div>
+    </section>
+    <section id="services" class="section">
+      <div class="container grid"></div>
+    </section>
   </main>
 </body>
 
