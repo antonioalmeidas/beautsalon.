@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="pti_BR">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-    rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/style.css">
-  <link rel="stylesheet" href="style.css">
-  <title>OriginSix</title>
-</head>
+    <link rel="stylesheet" href="style.css">
+    <title>OriginSix</title>
+  </head>
 
-<body>
-  <header id="header">
-    <nav class="container">
-      <a class="logo" href="#">beauty<span>salon</span>.</a>
-      <div class="menu">
-        <!-- atalho emmet-> ul>li*5a -->
-        <ul class="grid">
-          <li><a class="title" href="#home">Início</a></li>
-          <li><a class="title" href="#about">Sobre</a></li>
-          <li><a class="title" href="#services">Serviços</a></li>
-          <li><a class="title" href="#testimanials">Depoimentos</a></li>
-          <li><a class="title" href="#contact">Contato</a></li>
-        </ul>
-      </div>
-      <div class="icon-menu toggle"></div>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">beauty<span>salon</span>.</a>
+        <div class="menu">
+          <!-- atalho emmet-> ul>li*5a -->
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimanials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="icon-menu toggle"></div>
         <div class="icon-close toggle"></div>
-    </nav>
-  </header>
-  <main>
-    <section class="section" id="home">
-      <div class="container grid">
+      </nav>
+    </header>
+    <main>
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="cabelelheira escovando cabelo da cliente">
+          </div>
+          <div class="text">
+            <h2 class="title">Saúde natural para os seus cabelos</h2>
+            <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
+            <a class="button button" href="#">Agendar um horário</a>
+          </div>
+        </div>
+      </section>
+      <div class="divider-1"></div>
+      <!--atalho emmet -> section.section#about>.container.grid -->
+      <section id="about" class="section">
+        <div class="container grid"></div>
         <div class="image">
-        <img src="assets/image/Img.svg" alt="cabelelheira escovando cabelo da cliente">
+          <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="três mulheres sorrindo">
         </div>
         <div class="text">
-          <h2 class="title">Saúde natural para os seus cabelos</h2>
-          <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
-          <a class="button button" href="#">Agendar um horário</a>
+          <h2 class="title">Sobre nós</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <br>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <br>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
         </div>
-      </div>
-    </section>
-    <div class="divider-1"></div>
-    <!--atalho emmet -> section.section#about>.container.grid -->
-    <section id="about" class="section">
-      <div class="container grid"></div>
-    </section>
-    <section id="services" class="section">
-      <div class="container grid"></div>
-    </section>
-  </main>
-</body>
-
+      </section>
+      <section id="services" class="section">
+        <div class="container grid"></div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
