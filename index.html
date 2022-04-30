@@ -1,119 +1,214 @@
 <!DOCTYPE html>
 <html lang="pti_BR">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="assets/fonts/style.css">
-    <link rel="stylesheet" href="style.css">
-    <title>OriginSix</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-  <body>
-    <header id="header">
-      <nav class="container">
-        <a class="logo" href="#">beauty<span>salon</span>.</a>
-        <div class="menu">
-          <!-- atalho emmet-> ul>li*5a -->
-          <ul class="grid">
-            <li><a class="title" href="#home">Início</a></li>
-            <li><a class="title" href="#about">Sobre</a></li>
-            <li><a class="title" href="#services">Serviços</a></li>
-            <li><a class="title" href="#testimanials">Depoimentos</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
-          </ul>
-        </div>
-        <div class="icon-menu toggle"></div>
-        <div class="icon-close toggle"></div>
-      </nav>
-    </header>
-    <main>
-      <section class="section" id="home">
-        <div class="container grid">
-          <div class="image">
-            <img 
-              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
-              alt="cabelelheira escovando cabelo da cliente">
-          </div>
-          <div class="text">
-            <h2 class="title">Saúde natural para os seus cabelos</h2>
-            <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
-            <a class="button button" href="#">Agendar um horário</a>
-          </div>
-        </div>
-      </section>
-      <div class="divider-1"></div>
-      <!--atalho emmet -> section.section#about>.container.grid -->
-      <section id="about" class="section">
-        <div class="container grid"></div>
+  <link rel="stylesheet" href="assets/fonts/style.css">
+  <link rel="stylesheet" href="style.css">
+
+
+  <title>OriginSix</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="container">
+      <a class="logo" href="#">beauty<span>salon</span>.</a>
+      <div class="menu">
+        <!-- atalho emmet-> ul>li*5a -->
+        <ul class="grid">
+          <li><a class="title" href="#home">Início</a></li>
+          <li><a class="title" href="#about">Sobre</a></li>
+          <li><a class="title" href="#services">Serviços</a></li>
+          <li><a class="title" href="#testimonials">Depoimentos</a></li>
+          <li><a class="title" href="#contact">Contato</a></li>
+        </ul>
+      </div>
+      <div class="icon-menu toggle"></div>
+      <div class="icon-close toggle"></div>
+    </nav>
+  </header>
+
+  <main>
+    <!--home--------------------------------------------------------->
+    <section class="section" id="home">
+      <div class="container grid">
         <div class="image">
           <img
-            src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
-            alt="três mulheres sorrindo">
+            src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+            alt="cabelelheira escovando cabelo da cliente">
         </div>
         <div class="text">
-          <h2 class="title">Sobre nós</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-          <br>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
+          <h2 class="title">Saúde natural para os seus cabelos</h2>
+          <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
+          <a class="button button" href="#">Agendar um horário</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <div class="divider-2"></div>
+    <div class="divider-1"></div>
 
-      <section class="section" id="services">
-        <div class="container grid">
-          <header>
-            <h2 class="title">Serviços</h2>
-            <p>
-              Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou clientes de inúmeros países com seus 
-              tratamentos exclusivos e totalmente naturais
-            </p>
-          </header>
+    <!-- About ----------------------------------------------------->
+    <!--atalho emmet -> section.section#about>.container.grid -->
+    <section id="about" class="section">
+      <div class="container grid"></div>
+      <div class="image">
+        <img
+          src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+          alt="três mulheres sorrindo">
+      </div>
+      <div class="text">
+        <h2 class="title">Sobre nós</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <br>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <br>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </section>
 
-          <div class="cards grid">
+    <div class="divider-2"></div>
 
-            <div class="card">
-              <i class="icon-woman-hair"></i>
-              <h3 class="title">Terapia capilar</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.Odit distinctio neque ablandi, dolorem aperiam nulla explicabo asperiores</p>
-            </div>
+    <!-- Services----------------------------------------------------- -->
 
-            <div class="card">
-              <i class="icon-trim"></i>
-              <h3 class="title">Cortes</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.Odit distinctio neque ablandi, dolorem aperiam nulla explicabo asperiores</p>
-            </div>
+    <section class="section" id="services">
+      <div class="container grid">
+        <header>
+          <h2 class="title">Serviços</h2>
+          <p>
+            Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou clientes de inúmeros países com
+            seus
+            tratamentos exclusivos e totalmente naturais
+          </p>
+        </header>
 
-            <div class="card">
-              <i class="icon-cosmetic"></i>
-              <h3 class="title">Tratamentos</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.Odit distinctio neque ablandi, dolorem aperiam nulla explicabo asperiores</p>
-            </div>
+        <div class="cards grid">
+
+          <div class="card">
+            <i class="icon-woman-hair"></i>
+            <h3 class="title">Terapia capilar</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.Odit distinctio neque ablandi, dolorem aperiam
+              nulla explicabo asperiores</p>
+          </div>
+
+          <div class="card">
+            <i class="icon-trim"></i>
+            <h3 class="title">Cortes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.Odit distinctio neque ablandi, dolorem aperiam
+              nulla explicabo asperiores</p>
+          </div>
+
+          <div class="card">
+            <i class="icon-cosmetic"></i>
+            <h3 class="title">Tratamentos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.Odit distinctio neque ablandi, dolorem aperiam
+              nulla explicabo asperiores</p>
           </div>
         </div>
-      </section>
-    </main>
-    <script src="main.js"></script>
-  </body>
+      </div>
+    </section>
+
+    <div class="divider-1"></div>
+    <!-- Testimonials -->
+
+    <!-- emmet -> section.section#testimonials>.container.grid>header>h2 -->
+    <section class="section" id="testimonials">
+      <div class="container swiper">
+        <header>
+          <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+        </header>
+        <div class="testimonials swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, repudiandae. Quibusdam quae,
+                  consequuntur
+                  similique aperiam, quas eaque adipisci magni id dolorum sint.
+                </p>
+                <cite>
+                  <img src="assets/image/Img.svg" alt="">
+                  Wanessa Souza
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, repudiandae. Quibusdam quae,
+                  consequuntur
+                  similique aperiam, quas eaque adipisci magni id dolorum sint.
+                </p>
+                <cite>
+                  <img src="assets/image/Img.svg" alt="">
+                  Wanessa Souza
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, repudiandae. Quibusdam quae,
+                  consequuntur
+                  similique aperiam, quas eaque adipisci magni id dolorum sint.
+                </p>
+                <cite>
+                  <img src="assets/image/Img.svg" alt="">
+                  Wanessa Souza
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+<div class="divider-2"></div>
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container grid">
+        <div class="text">
+          <h2 class="title">Entre me contato com agente!</h2>
+          <p>Entre em cotato com a Beaultysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+          <a href="https://api.whatsapp.com/send?phone=+5511998456754&text=Olá! gostaria de agendar uma horário? " class="button" target="_blank"><i class="icon-whatsapp"></i>Entrar em contato</a>
+        </div>
+<div class="links">
+  <ul class="grid">
+    <li><i class="icon-phone"></i>11 99845-6754</li>
+    <li><i class="icon-map-pin"></i>R. Amauri Souza, 346</li>
+    <li><i class="icon-mail"></i>contato@beaultysalon.com</li>
+  </ul>
+</div>
+
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
 
 </html>
