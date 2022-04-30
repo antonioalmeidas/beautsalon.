@@ -16,7 +16,7 @@ for (const link of links) {
   })
 }
 
-// mudar o header da pagina quando der scroll 
+// mudar o header da pagina quando der scroll
 
 const header = document.querySelector("#header")
 const navHeight =  header.offsetHeight
@@ -26,8 +26,41 @@ window.addEventListener('scroll',()=>{
   //scroll maior que a altura do header
     header.classList.add('scroll')
   }else{
-   //menor que a altura do header 
+   //menor que a altura do header
     header.classList.remove('scroll')
   }
 })
 
+
+
+
+
+// slider testimonials
+
+const swiper = new Swiper('.swiper-container',{
+  slidesPerView:1,
+  pagination:{
+    el:'.swiper-pagination'
+  },
+  mousewheel:true,
+  keyboard:true
+})
+
+// ScrollReveal
+
+const scrollReveal = scrollReveal({
+  origin:'top',
+  distance:'30px',
+  duration:700,
+  reset:true
+})
+
+scrollReveal.reveal(
+ ` #home .image, #home .text,
+ #about .image, #about .text,
+ #services header, #services .card,
+ #testimonials header, #testimonials .testimonials
+ #contact .text, #contact .links
+ `,
+ {interval:100}
+) 
